@@ -52,9 +52,9 @@ int countDivisorsTillN2(int n)
 
 int sieveOfEratosthenese(int n)
 {
-    vector<int> sieve(n + 1, 1);
+    vector<int> sieve(n + 1, 1); 
     sieve[1] = 0;
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; i <= n; i++) //tc-> nlog(log(n))
     {
         if (!sieve[i])
             continue;
